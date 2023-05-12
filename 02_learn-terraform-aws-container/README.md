@@ -7,6 +7,9 @@ Terraformを使用して、AWSリソースを操作するサンプルコード�
 ## Blog
 
 - [TerraformによるAWSリソースの作成](https://yossi-note.com/creating_aws_resources_with_terraform/)
+- [TerraformによるAWSリソースの更新](https://yossi-note.com/updating_aws_resources_with_terraform/)
+- [TerraformによるAWSリソースの破棄](https://yossi-note.com/destroying_aws_resources_with_terraform/)
+- [TerraformでAWSリソースの構成内容を変数で定義する](https://yossi-note.com/define_aws_resource_configuration_with_variables_in_terraform/)
 
 ## Usage
 
@@ -29,4 +32,10 @@ terraform apply
 
 # 現在の状態の確認
 terraform show
+
+# AWSリソースの破棄内容を確認
+terraform plan -destroy
+
+# AWSリソースの破棄
+terraform destroy
 ```
