@@ -11,6 +11,7 @@ Terraformを使用して、AWSリソースを操作するサンプルコード�
 - [TerraformによるAWSリソースの破棄](https://yossi-note.com/destroying_aws_resources_with_terraform/)
 - [TerraformでAWSリソースの構成内容を変数で定義する](https://yossi-note.com/define_aws_resource_configuration_with_variables_in_terraform/)
 - [Terraformで構築したAWSリソースの情報取得](https://yossi-note.com/acquisition_of_aws_resource_information_built_with_terraform/)
+- [Terraformのstateをクラウドで管理する](https://yossi-note.com/manage_terraform_state_in_the_cloud/)
 
 ## Usage
 
