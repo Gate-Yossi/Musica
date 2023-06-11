@@ -6,7 +6,7 @@ Golangで外部パッケージを使用するコードを管理しているデ�
 
 ## Blog
 
-- [Go言語入門：外部パッケージの呼び出し](https://yossi-note.com/introduction_to_go_hello_world/)
+- [Go言語入門：外部パッケージの呼び出し](https://yossi-note.com/go_calling_external_packages/)
 
 ## Usage
 
