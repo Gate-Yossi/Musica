@@ -20,4 +20,3 @@ popd
 pushd data-access
 go run .
 ```
-
