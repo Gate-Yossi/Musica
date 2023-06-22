@@ -7,6 +7,7 @@ GolangでRESTful APIの開発コードを管理しているディレクトリ
 ## Blog
 
 - [Go言語入門：RESTful API の開発 Vol.1](https://yossi-note.com/developing_restful_api_with_golang_1/)
+- [Go言語入門：RESTful API の開発 Vol.2](https://yossi-note.com/developing_restful_api_with_golang_2/)
 
 ## Usage
 
@@ -30,3 +31,7 @@ curl http://localhost:8080/albums \
     --data '{"id": "4","title": "The Modern Sound of Betty Carter","artist": "Betty Carter","price": 49.99}'
 ```
 
+```sh
+# 別ターミナルから実施
+curl http://localhost:8080/albums/2
+```
