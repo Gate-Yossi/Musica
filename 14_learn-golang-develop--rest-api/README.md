@@ -1,25 +1,37 @@
-# 14_learn-golang-develop--rest-api
+# 14_learn-golang-develop--rest-api/
 
 ## Description
 
-GolangでDatabase接続のコードを管理しているディレクトリ
+GolangでRESTful APIの開発コードを管理しているディレクトリ
 
 ## Blog
 
-- [Go言語入門：DBへの接続 vol.1](https://yossi-note.com/golang_database_access_1/)
-- [Go言語入門：DBへの接続 vol.2](https://yossi-note.com/golang_database_access_2/)
+- [Go言語入門：RESTful API の開発 Vol.1](https://yossi-note.com/developing_restful_api_with_golang_1/)
+- [Go言語入門：RESTful API の開発 Vol.2](https://yossi-note.com/developing_restful_api_with_golang_2/)
 
 ## Usage
 
 ```sh
-cd 13_learn-golang-database-access
+cd 14_learn-golang-develop--rest-api
 
-pushd database
-docker compose up -d
-popd
-
-pushd data-access
-export DBUSER=root
-export DBPASS=P@ssw0rd
 go run .
+```
+
+```sh
+# 別ターミナルから実施
+curl http://localhost:8080/albums
+```
+
+```sh
+# 別ターミナルから実施
+curl http://localhost:8080/albums \
+    --include \
+    --header "Content-Type: application/json" \
+    --request "POST" \
+    --data '{"id": "4","title": "The Modern Sound of Betty Carter","artist": "Betty Carter","price": 49.99}'
+```
+
+```sh
+# 別ターミナルから実施
+curl http://localhost:8080/albums/2
 ```
