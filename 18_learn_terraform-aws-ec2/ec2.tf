@@ -13,6 +13,7 @@ resource "aws_instance" "learn_ec2_instance" {
   subnet_id                   = aws_subnet.learn_ec2_public_subnet_1a.id
   associate_public_ip_address = "true"
   key_name                    = var.key_name
+  user_data                   = file("./userdata.sh")
   tags = {
     Name = "${var.tag_name}"
   }

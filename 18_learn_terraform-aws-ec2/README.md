@@ -8,6 +8,7 @@ Terraformを使用して、EC2環境を構築するサンプルコードを管�
 
 - [AWS入門：Terraformを利用したEC2環境の構築](https://yossi-note.com/building_an_ec2_environment_using_terraform/)
 - [AWS入門：Terraformで構築したEC2環境にSSH接続する](https://yossi-note.com/ssh_connection_to_the_ec2_environment_built_with_terraform/)
+- [AWS入門：Terraformで構築したEC2環境にnginxをインストールする](https://yossi-note.com/install_nginx_in_an_ec2_environment_built_with_terraform/)
 
 ## Usage
 
