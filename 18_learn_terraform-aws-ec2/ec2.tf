@@ -14,6 +14,7 @@ resource "aws_instance" "learn_ec2_instance" {
   associate_public_ip_address = "true"
   key_name                    = var.key_name
   user_data                   = file("./userdata.sh")
+  iam_instance_profile        = aws_iam_instance_profile.learn-aws-ec2-profile.name
   tags = {
     Name = "${var.tag_name}"
   }
