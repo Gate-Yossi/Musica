@@ -1,0 +1,8 @@
+{
+    "autoload": {
+        "files": ["./src/Greeter.php"]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.2"
+    }
+}
