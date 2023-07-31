@@ -8,6 +8,7 @@ PHPUnitの実行環境を管理しているディレクトリ
 
 - [PHP入門：PHPUnitの環境構築](https://yossi-note.com/phpunit_environment_construction/)
 - [PHP入門：PHPUnitで例外発生をテストする](https://yossi-note.com/test_exception_with_phpunit/)
+- [PHP入門：PHPUnitで任意の引数を受け取ってテストする](https://yossi-note.com/using_data_providers_in_phpunit/)
 
 ## Usage
 
