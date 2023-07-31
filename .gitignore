@@ -43,3 +43,6 @@ terraform.rc
 
 # 証明書
 *.pem
+
+# composer
+vendor
