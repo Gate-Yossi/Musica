@@ -11,6 +11,7 @@ PHPUnitの実行環境を管理しているディレクトリ
 - [PHP入門：PHPUnitで任意の引数を受け取ってテストする](https://yossi-note.com/using_data_providers_in_phpunit/)
 - [PHP入門：PHPUnitでechoやprintなどの出力をテストする](https://yossi-note.com/testing_output_with_phpunit/)
 - [PHP入門：PHPUnitで未実装のテストケースを用意する](https://yossi-note.com/prepare_an_unimplemented_test_case_with_phpunit/)
+- [PHP入門：PHPUnitでテストをスキップする](https://yossi-note.com/skip_tests_in_phpunit/)
 
 ## Usage
 
