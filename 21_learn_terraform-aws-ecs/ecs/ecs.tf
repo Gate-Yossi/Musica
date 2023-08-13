@@ -15,38 +15,10 @@ resource "aws_ecs_task_definition" "learn_ecs_task" {
   task_role_arn            = "${var.task_role_arn}"
   execution_role_arn       = "${var.execution_role_arn}"
   network_mode             = "awsvpc"
-  container_definitions    = <<-EOS
-  [
-    {
-        "name": "${local.container_name}",
-        "image": "${var.repository_url}:0.0.1",
-        "cpu": 0,
-        "portMappings": [
-            {
-                "name": "${local.container_name}",
-                "containerPort": 80,
-                "hostPort": 80,
-                "protocol": "tcp",
-                "appProtocol": "http"
-            }
-        ],
-        "essential": true,
-        "environment": [],
-        "environmentFiles": [],
-        "mountPoints": [],
-        "volumesFrom": [],
-        "logConfiguration": {
-            "logDriver": "awslogs",
-            "options": {
-                "awslogs-create-group": "true",
-                "awslogs-group": "/ecs/learn-ecs-task-definition",
-                "awslogs-region": "ap-northeast-1",
-                "awslogs-stream-prefix": "ecs"
-            }
-        }
-    }
-  ]
-  EOS
+  container_definitions    = templatefile("${path.module}/learn_ecs_task.json", {
+    "container_name" = "${local.container_name}",
+    "repository_url" = "${var.repository_url}",
+  })
   runtime_platform {
     cpu_architecture        = "X86_64"
     operating_system_family = "LINUX"
