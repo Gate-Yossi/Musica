@@ -13,6 +13,7 @@ Terraformを使用して、ECS環境を構築するサンプルコードを管�
 - [AWS入門：Terrafromを利用したECS環境の構築について -IAM編-](https://yossi-note.com/build_iam_of_ecs_using_terraform/)
 - [AWS入門：Terrafromを利用したECS環境の構築について -クラスタ、サービスとタスク定義編-](https://yossi-note.com/build_main_of_ecs_using_terraform/)
 - [AWS入門：Terrafromを利用したECS環境の構築について -動作確認編-](https://yossi-note.com/operation_check_of_ecs/)
+- [AWS入門：Terrafromを利用したECS環境の構築について -ECS Exec編-](https://yossi-note.com/about_exec_of_ecs/)
 
 ## Usage
 

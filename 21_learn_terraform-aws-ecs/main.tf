@@ -59,6 +59,7 @@ module "ecs" {
   tag_group   = var.tag_group
 
   lb_target_group_arn = module.lb.lb_target_group_arn
+  task_role_arn       = module.iam.task_role_arn
   execution_role_arn  = module.iam.execution_role_arn
   public_a_id         = module.vpc.public_a_id
   public_c_id         = module.vpc.public_c_id
