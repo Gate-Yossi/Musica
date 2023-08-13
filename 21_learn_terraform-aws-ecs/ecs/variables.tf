@@ -6,6 +6,7 @@ variable "name_prefix" {}
 variable "tag_name"    {}
 variable "tag_group"   {}
 
+variable "task_role_arn"       {}
 variable "execution_role_arn"  {}
 variable "public_a_id"         {}
 variable "public_c_id"         {}

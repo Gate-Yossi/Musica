@@ -12,6 +12,7 @@ resource "aws_ecs_task_definition" "learn_ecs_task" {
   cpu                      = 512
   memory                   = 1024
   requires_compatibilities = ["FARGATE"]
+  task_role_arn            = "${var.task_role_arn}"
   execution_role_arn       = "${var.execution_role_arn}"
   network_mode             = "awsvpc"
   container_definitions    = <<-EOS
@@ -56,6 +57,7 @@ resource "aws_ecs_service" "learn_ecs_service" {
   name            = var.tag_name
   cluster         = aws_ecs_cluster.learn_ecs_cluster.id
   task_definition = aws_ecs_task_definition.learn_ecs_task.arn
+  enable_execute_command = true
   launch_type     = "FARGATE"
   desired_count   = 2
   network_configuration {
