@@ -1,0 +1,8 @@
+{
+    "autoload": {
+        "files": ["./Mailer.php", "./UserManager.php"]
+    },
+    "require": {
+        "php-di/php-di": "^7.0"
+    }
+}
