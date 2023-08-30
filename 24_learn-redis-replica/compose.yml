@@ -1,0 +1,37 @@
+version: '3.7'
+
+services:
+
+  redis-source:
+    build: ./redis-source
+    container_name: redis-source
+    hostname: redis-source
+    ports:
+      - '6379:6379'
+    networks:
+      - net
+
+  redis-replica:
+    build: ./redis-replica
+    container_name: redis-replica
+    hostname: redis-replica
+    ports:
+      - '6380:6379'
+    command: redis-server --slaveof redis-source 6379
+    networks:
+      - net
+    depends_on:
+      - redis-source
+
+  redis-commander:
+    image: rediscommander/redis-commander
+    container_name: redis-commander
+    environment:
+      - REDIS_HOSTS=source:redis-source:6379,replica:redis-replica:6379
+    ports:
+      - "8081:8081"
+    networks:
+      - net
+
+networks:
+  net:
