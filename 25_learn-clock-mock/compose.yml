@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+
+  php-cmd:
+    build: ./php
+    container_name: php-cmd
+    volumes:
+        - ./php/src:/work
