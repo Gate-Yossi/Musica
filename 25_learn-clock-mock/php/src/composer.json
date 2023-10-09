@@ -1,0 +1,5 @@
+{
+    "require-dev": {
+        "slope-it/clock-mock": "^0.4.0"
+    }
+}
