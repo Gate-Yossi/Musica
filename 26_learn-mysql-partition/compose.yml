@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+
+  mysql:
+    build: ./mysql
+    container_name: mysql
+    environment:
+      MYSQL_DATABASE: sample
+      MYSQL_ROOT_PASSWORD: P@ssw0rd
+    networks:
+      - net
+  
+  aws:
+    build: ./aws
+    container_name: aws
+    networks:
+      - net
+
+networks:
+  net:
