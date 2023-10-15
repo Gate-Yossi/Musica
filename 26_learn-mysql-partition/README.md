@@ -10,6 +10,7 @@ mysqlでパーティションを検証したサンプルコードを管理して
 - [mysqlで日付パーティションのテーブル作成](https://yossi-note.com/creating-a-table-with-date-partition-in-mysql/)
 - [mysqlで日付パーティションを追加するバッチの作成](https://yossi-note.com/creating-a-batch-to-add-date-partition-in-mysql/)
 - [mysqlで日付パーティションを削除するバッチの作成](https://yossi-note.com/creating-a-batch-to-delete-date-partition-in-mysql/)
+- [mysqlで日付パーティションをバックアップするバッチの作成](https://yossi-note.com/creating-a-batch-to-backup-date-partition-in-mysql/)
 
 ## Usage
 
