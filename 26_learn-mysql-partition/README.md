@@ -2,17 +2,21 @@
 
 ## Description
 
-Redis環境の構築を検証したサンプルコードを管理しているディレクトリ
+mysqlでパーティションを検証したサンプルコードを管理しているディレクトリ
 
 ## Blog
 
-- [Redis入門：Dockerを利用した Redisのレプリケーション環境を構築する](https://yossi-note.com/build_a_redis_replication_environment_using_docker/)
+- [DockerでAmazonLinux2023にmysqlクライアントをインストールする](https://yossi-note.com/install-mysql-client-on-amazon-linux-2023-with-docker/)
 
 ## Usage
 
 ```sh
 # ビルド
-docker compose build
+make build
+
 # 起動
-docker compose up -d
+make up
+
+# awsコンテナへのログイン
+make login_aws
 ```
