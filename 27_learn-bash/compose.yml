@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+
+  local:
+    build: ./local
+    container_name: local
+    working_dir: /work
+    volumes:
+      - ./local/work:/work
+    networks:
+      - net
+  
+networks:
+  net:
