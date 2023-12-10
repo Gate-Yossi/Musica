@@ -11,6 +11,8 @@ bashのサンプルコードを試す環境
 - [bash入門：シェル内でfunctionを並列実行させる](https://yossi-note.com/introduction-to-bash-execute-functions-in-parallel-within-the-shell/)
 - [シェル入門：shebangについて](https://yossi-note.com/introduction-to-shell-about-shebang/)
 - [bash入門：おすすめのsetオプション](https://yossi-note.com/introduction-to-bash-recommended-set-options/)
+- [bash入門：logging(ロギング)について -vol.1-](https://yossi-note.com/introduction-to-bash-about-logging-vol-1/)
+- [bash入門：logging(ロギング)について -vol.2-](https://yossi-note.com/introduction-to-bash-about-logging-vol-2/)
 
 ## Usage
 
