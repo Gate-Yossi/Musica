@@ -13,6 +13,8 @@ bashのサンプルコードを試す環境
 - [bash入門：おすすめのsetオプション](https://yossi-note.com/introduction-to-bash-recommended-set-options/)
 - [bash入門：logging(ロギング)について -vol.1-](https://yossi-note.com/introduction-to-bash-about-logging-vol-1/)
 - [bash入門：logging(ロギング)について -vol.2-](https://yossi-note.com/introduction-to-bash-about-logging-vol-2/)
+- [bash入門：logging(ロギング)について -vol.3-](https://yossi-note.com/introduction-to-bash-about-logging-vol-3/)
+- [bash入門：trapについて](https://yossi-note.com/introduction-to-bash-about-trap/)
 
 ## Usage
 
