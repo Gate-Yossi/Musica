@@ -15,6 +15,7 @@ bashのサンプルコードを試す環境
 - [bash入門：logging(ロギング)について -vol.2-](https://yossi-note.com/introduction-to-bash-about-logging-vol-2/)
 - [bash入門：logging(ロギング)について -vol.3-](https://yossi-note.com/introduction-to-bash-about-logging-vol-3/)
 - [bash入門：trapについて](https://yossi-note.com/introduction-to-bash-about-trap/)
+- [bash入門：logging(ロギング)について -vol.4-](https://yossi-note.com/introduction-to-bash-about-logging-vol-4/)
 
 ## Usage
 
