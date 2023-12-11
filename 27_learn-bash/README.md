@@ -18,6 +18,7 @@ bashのサンプルコードを試す環境
 - [bash入門：logging(ロギング)について -vol.4-](https://yossi-note.com/introduction-to-bash-about-logging-vol-4/)
 - [bash入門：trapについて -スクリプト終了時に処理をする-](https://yossi-note.com/introduction-to-bash-about-trap-processing-when-a-script-ends/)
 - [bash入門：logging(ロギング)について -vol.5-](https://yossi-note.com/introduction-to-bash-about-logging-vol-5/)
+- [bash入門：logging(ロギング)について -vol.6-](https://yossi-note.com/introduction-to-bash-about-logging-vol-6/)
 
 ## Usage
 
