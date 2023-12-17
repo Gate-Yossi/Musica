@@ -1,3 +1,7 @@
+# shfmt
+FROM mvdan/shfmt:latest-alpine as shfmt
+
+# メイン
 FROM ubuntu:24.04
 
 RUN apt-get update \
@@ -5,3 +9,5 @@ RUN apt-get update \
         shellcheck \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
+
+COPY --from=shfmt /bin/shfmt /usr/bin/
