@@ -1,0 +1,8 @@
+[*.sh]
+indent_style = space # インデントのスタイル（"tab"または"space"）
+indent_size  = 4     # インデントのサイズ。スペースの場合は数値で指定
+tab_width    = 4     # タブ文字の幅
+end_of_line  = lf    # 行末の改行文字（"lf"、"cr"、"crlf"）
+charset      = utf-8 # ファイルの文字エンコーディング（"utf-8"など）。
+trim_trailing_whitespace = true # 行末の空白を削除するかどうか（trueまたはfalse）。
+insert_final_newline     = true # ファイルの最後に空行を挿入するかどうか（trueまたはfalse）。
