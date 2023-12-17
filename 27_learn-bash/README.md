@@ -20,6 +20,7 @@ bashのサンプルコードを試す環境
 - [bash入門：logging(ロギング)について -vol.5-](https://yossi-note.com/introduction-to-bash-about-logging-vol-5/)
 - [bash入門：logging(ロギング)について -vol.6-](https://yossi-note.com/introduction-to-bash-about-logging-vol-6/)
 - [bash入門：xargsを利用した関数の並列実行](https://yossi-note.com/introduction-to-bash-parallel-execution-of-functions-using-xargs/)
+- [bash入門：shellcheckによる問題解析](https://yossi-note.com/introduction-to-bash-problem-analysis-using-shellcheck/)
 
 ## Usage
 
