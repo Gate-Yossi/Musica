@@ -23,6 +23,7 @@ bashのサンプルコードを試す環境
 - [bash入門：shellcheckによる問題解析](https://yossi-note.com/introduction-to-bash-problem-analysis-using-shellcheck/)
 - [bash入門：shfmtによるフォーマット](https://yossi-note.com/introduction-to-bash-formatting-with-shfmt/)
 - [bash入門：EditorConfigによる書式設定](https://yossi-note.com/introduction-to-bash-formatting-with-editorconfig/)
+- [bash入門：shellspecによるシェルスクリプトのテスト](https://yossi-note.com/introduction-to-bash-testing-shell-scripts-with-shellspec/)
 
 ## Usage
 
