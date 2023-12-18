@@ -18,3 +18,6 @@ COPY --from=shfmt /bin/shfmt /usr/bin/
 # ShellSpec
 RUN curl -fsSL https://git.io/shellspec | sh -s -- --yes \
  && ln -s /root/.local/lib/shellspec/shellspec /usr/local/bin/
+
+# shUnit2
+RUN git clone https://github.com/kward/shunit2.git /usr/local/bin/shunit2
