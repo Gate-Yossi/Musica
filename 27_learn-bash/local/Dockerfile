@@ -21,3 +21,15 @@ RUN curl -fsSL https://git.io/shellspec | sh -s -- --yes \
 
 # shUnit2
 RUN git clone https://github.com/kward/shunit2.git /usr/local/bin/shunit2
+
+# bats
+ARG BATS_VERSION="1.10.0"
+
+# Install bats
+RUN batstmp="$(mktemp -d bats-core-${BATS_VERSION}.XXXX)" \
+    && echo ${batstmp} \
+    && cd ${batstmp} \
+    && curl -SLO https://github.com/bats-core/bats-core/archive/refs/tags/v${BATS_VERSION}.tar.gz \
+    && tar -zxvf v${BATS_VERSION}.tar.gz \
+    && bash bats-core-${BATS_VERSION}/install.sh /usr/local \
+    && rm -rf "${batstmp}"
