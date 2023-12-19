@@ -25,6 +25,7 @@ bashのサンプルコードを試す環境
 - [bash入門：EditorConfigによる書式設定](https://yossi-note.com/introduction-to-bash-formatting-with-editorconfig/)
 - [bash入門：shellspecによるシェルスクリプトのテスト](https://yossi-note.com/introduction-to-bash-testing-shell-scripts-with-shellspec/)
 - [bash入門：shUnit2によるシェルスクリプトのテスト](https://yossi-note.com/introduction-to-bash-testing-shell-scripts-with-shunit2/)
+- [bash入門：batsによるシェルスクリプトのテスト](https://yossi-note.com/introduction-to-bash-testing-shell-scripts-with-bats/)
 
 ## Usage
 
