@@ -32,6 +32,12 @@ clean:
 	cd $(WOKR_DIR) \
 	&& docker compose down --rmi all --volumes --remove-orphans
 
+# ログ
+.PHONY: logs
+logs:
+	cd $(WOKR_DIR) \
+	&& docker compose logs
+
 # mysql_serverコンテナへのログイン
 .PHONY: login_mysql_server
 login_mysql_server:
