@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+
+  mysql_server:
+    build: ./mysql_server
+    container_name: mysql_server
+    environment:
+      MYSQL_DATABASE: sample
+      MYSQL_ROOT_PASSWORD: P@ssw0rd
+    networks:
+      - net
+  
+networks:
+  net:
