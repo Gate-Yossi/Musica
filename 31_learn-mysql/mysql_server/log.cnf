@@ -23,3 +23,6 @@ enforce-gtid-consistency
 innodb_flush_log_at_trx_commit=1
 sync_binlog=1
 sysdate_is_now
+
+# エラーログ
+log-error=/var/log/mysql/error.log
