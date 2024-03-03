@@ -3,8 +3,11 @@ version: '3.8'
 services:
 
   mysql_server:
+    user: mysql
     build: ./mysql_server
     container_name: mysql_server
+    volumes:
+      - ./mysql_server/log:/var/log/mysql
     environment:
       MYSQL_DATABASE: sample
       MYSQL_ROOT_PASSWORD: P@ssw0rd
