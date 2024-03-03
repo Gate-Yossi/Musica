@@ -13,6 +13,14 @@ services:
       MYSQL_ROOT_PASSWORD: P@ssw0rd
     networks:
       - net
-  
+
+  adminer:
+    build: ./adminer
+    container_name: adminer
+    ports:
+      - 8080:8080
+    networks:
+      - net
+
 networks:
   net:

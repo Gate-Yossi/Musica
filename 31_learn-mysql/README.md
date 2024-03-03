@@ -11,6 +11,8 @@ mysqlの開発環境を管理するディレクトリ
 - [MySQL入門：DockerでMySQL環境を構築する -Vol.3-](https://yossi-note.com/introduction-to-mysql-build-a-mysql-environment-with-docker-vol-3/)
 - [MySQL入門：DockerでMySQL環境を構築する -Vol.4-](https://yossi-note.com/introduction-to-mysql-build-a-mysql-environment-with-docker-vol-4/)
 - [MySQL入門：DockerでMySQL環境を構築する -Vol.5-](https://yossi-note.com/introduction-to-mysql-build-a-mysql-environment-with-docker-vol-5/)
+- [MySQL入門：DockerでMySQL環境を構築する -Vol.6-](https://yossi-note.com/introduction-to-mysql-build-a-mysql-environment-with-docker-vol-6/)
+- [MySQL入門：DockerでMySQL環境を構築する -Adminer-](https://yossi-note.com/introduction-to-mysql-build-a-mysql-environment-with-docker-adminer/)
 
 ## Usage
 
