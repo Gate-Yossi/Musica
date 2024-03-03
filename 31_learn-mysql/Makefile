@@ -12,7 +12,8 @@ ps:
 .PHONY: build
 build:
 	cd $(WOKR_DIR) \
-	&& docker compose build
+	&& docker compose build \
+	&& docker compose --profile tools build
 
 # アプリの起動
 .PHONY: up
@@ -43,6 +44,12 @@ logs:
 login_mysql_server:
 	cd $(WOKR_DIR) \
 	&& docker compose exec -it mysql_server sh
+
+# mysql_tunerの実行
+.PHONY: run_mysql_tuner
+run_mysql_tuner:
+	cd $(WOKR_DIR) \
+	&& docker compose --profile tools run -it mysql_tuner
 
 # help
 .PHONY: help

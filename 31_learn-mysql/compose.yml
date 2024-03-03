@@ -22,5 +22,17 @@ services:
     networks:
       - net
 
+  mysql_tuner:
+    build: ./mysql_tuner
+    container_name: mysql_tuner
+    environment:
+      MYSQL_HOST: mysql_server
+      MYSQL_USER: root
+      MYSQL_PASS: P@ssw0rd
+    networks:
+      - net
+    profiles:
+      - tools
+
 networks:
   net:
