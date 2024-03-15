@@ -1,0 +1,4 @@
+
+# tests
+*/tests/trivial/*
+!*/tests/trivial/plan.jmx
