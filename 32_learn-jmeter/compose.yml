@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+
+  jmeter:
+    build: ./jmeter
+    container_name: jmeter
+    working_dir: /tmp/apache-jmeter
+    volumes:
+      - ./jmeter:/tmp/apache-jmeter
+    networks:
+      - net
+    profiles:
+      - tools
+
+networks:
+  net:
