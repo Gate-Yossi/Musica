@@ -1,0 +1,43 @@
+
+services:
+
+  redmine:
+    build: ./redmine
+    container_name: redmine
+    ports:
+      - 8080:3000
+    environment:
+      TZ: Asia/Tokyo
+      REDMINE_DB_MYSQL: redmine_mysql
+      REDMINE_DB_DATABASE: redmine
+      REDMINE_DB_USERNAME: redmine_admin
+      REDMINE_DB_PASSWORD: P@ssw0rd
+      REDMINE_DB_ENCODING: utf8mb4
+    volumes:
+      - ./redmine/src/plugins:/usr/src/redmine/plugins
+      - ./redmine/src/themes:/usr/src/redmine/public/themes
+    depends_on:
+      redmine_mysql:
+        condition: service_healthy
+    networks:
+      - net
+
+  redmine_mysql:
+    build: ./mysql
+    container_name: redmine-mysql
+    environment:
+      TZ: Asia/Tokyo
+      MYSQL_ROOT_PASSWORD: P@ssw0rd
+      MYSQL_DATABASE: redmine
+      MYSQL_USER: redmine_admin
+      MYSQL_PASSWORD: P@ssw0rd
+    healthcheck:
+      test: "mysqladmin ping -h 127.0.0.1 -u root -p$$MYSQL_ROOT_PASSWORD"
+      timeout: 5s
+      interval: 5s
+      retries: 10
+    networks:
+      - net
+
+networks:
+  net:
