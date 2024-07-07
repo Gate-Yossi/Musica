@@ -7,6 +7,7 @@ terraformによるGCPリソースを管理するフォルダ
 ## Blog
 
 - [GCP入門：terraformによるリソース作成](https://yossi-note.com/introduction-to-gcp-creating-resources-with-terraform/)
+- [GCP入門：terraformで作成したリソースにSSH接続する](https://yossi-note.com/introduction-to-gcp-ssh-connection-to-resources-created-with-terraform/)
 
 ## Usage
 
@@ -38,10 +39,10 @@ terraform fmt
 # バリデーション
 terraform validate
 
-# AWSリソースの作成内容を確認
+# GCPリソースの作成内容を確認
 terraform plan
 
-# AWSリソースの作成
+# GCPリソースの作成
 terraform apply
 
 # 現在の状態の確認

@@ -5,6 +5,20 @@ resource "google_compute_network" "my" {
   mtu                     = 1460
 }
 
+resource "google_compute_firewall" "ssh" {
+  project = "terraform-20240707"
+  name    = "allow-ssh"
+  allow {
+    ports    = ["22"]
+    protocol = "tcp"
+  }
+  direction     = "INGRESS"
+  network       = google_compute_network.my.id
+  priority      = 1000
+  source_ranges = ["0.0.0.0/0"]
+  target_tags   = ["ssh"]
+}
+
 resource "google_compute_subnetwork" "my" {
   project       = "terraform-20240707"
   name          = "my-custom-subnet"
