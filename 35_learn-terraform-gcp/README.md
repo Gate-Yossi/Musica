@@ -8,6 +8,7 @@ terraformによるGCPリソースを管理するフォルダ
 
 - [GCP入門：terraformによるリソース作成](https://yossi-note.com/introduction-to-gcp-creating-resources-with-terraform/)
 - [GCP入門：terraformで作成したリソースにSSH接続する](https://yossi-note.com/introduction-to-gcp-ssh-connection-to-resources-created-with-terraform/)
+- [GCP入門：terraformで作成したリソースにデプロイしたFlaskアプリへ接続する](https://yossi-note.com/introduction-to-gcp-connect-to-flask-apps-deployed-to-resources-created-with-terraform/)
 
 ## Usage
 

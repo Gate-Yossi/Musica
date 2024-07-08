@@ -19,6 +19,18 @@ resource "google_compute_firewall" "ssh" {
   target_tags   = ["ssh"]
 }
 
+resource "google_compute_firewall" "flask" {
+  project = "terraform-20240707"
+  name    = "flask-app-firewall"
+  network = google_compute_network.my.id
+
+  allow {
+    protocol = "tcp"
+    ports    = ["5000"]
+  }
+  source_ranges = ["0.0.0.0/0"]
+}
+
 resource "google_compute_subnetwork" "my" {
   project       = "terraform-20240707"
   name          = "my-custom-subnet"
@@ -53,3 +65,7 @@ resource "google_compute_instance" "my" {
   }
 }
 
+// A variable for extracting the external IP address of the VM
+output "Web-server-URL" {
+  value = join("", ["http://", google_compute_instance.my.network_interface.0.access_config.0.nat_ip, ":5000"])
+}
