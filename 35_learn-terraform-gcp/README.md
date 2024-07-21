@@ -9,6 +9,7 @@ terraformによるGCPリソースを管理するフォルダ
 - [GCP入門：terraformによるリソース作成](https://yossi-note.com/introduction-to-gcp-creating-resources-with-terraform/)
 - [GCP入門：terraformで作成したリソースにSSH接続する](https://yossi-note.com/introduction-to-gcp-ssh-connection-to-resources-created-with-terraform/)
 - [GCP入門：terraformで作成したリソースにデプロイしたFlaskアプリへ接続する](https://yossi-note.com/introduction-to-gcp-connect-to-flask-apps-deployed-to-resources-created-with-terraform/)
+- [GCP入門：stateファイル(tfstate)をTerraform Cloudに移行する](https://yossi-note.com/introduction-to-gcp-migrate-state-files-tfstate-to-terraform-cloud/)
 
 ## Usage
 
@@ -24,10 +25,10 @@ asdf local terraform 1.8.5
 gcloud config get-value account
 
 # プロジェクト新規作成
-gcloud projects create terraform-20240707
+gcloud projects create terraform-20240721
 
 # プロジェクトの情報確認
-gcloud projects describe terraform-20240707
+gcloud projects describe terraform-20240721
 ```
 
 ```bash

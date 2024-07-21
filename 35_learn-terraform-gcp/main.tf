@@ -1,12 +1,22 @@
+terraform {
+  cloud {
+    organization = "yossi"
+
+    workspaces {
+      name = "poc-gcp-20240721"
+    }
+  }
+}
+
 resource "google_compute_network" "my" {
-  project                 = "terraform-20240707"
+  project                 = "terraform-20240721"
   name                    = "my-custom-mode-network"
   auto_create_subnetworks = false
   mtu                     = 1460
 }
 
 resource "google_compute_firewall" "ssh" {
-  project = "terraform-20240707"
+  project = "terraform-20240721"
   name    = "allow-ssh"
   allow {
     ports    = ["22"]
@@ -20,8 +30,8 @@ resource "google_compute_firewall" "ssh" {
 }
 
 resource "google_compute_firewall" "flask" {
-  project = "terraform-20240707"
-  name    = "flask-app-firewall"
+  project = "terraform-20240721"
+  name    = "flask-app-firewall-with-terraform-cloud"
   network = google_compute_network.my.id
 
   allow {
@@ -32,7 +42,7 @@ resource "google_compute_firewall" "flask" {
 }
 
 resource "google_compute_subnetwork" "my" {
-  project       = "terraform-20240707"
+  project       = "terraform-20240721"
   name          = "my-custom-subnet"
   ip_cidr_range = "10.0.1.0/24"
   region        = "us-west1"
@@ -41,7 +51,7 @@ resource "google_compute_subnetwork" "my" {
 
 # Create a single Compute Engine instance
 resource "google_compute_instance" "my" {
-  project      = "terraform-20240707"
+  project      = "terraform-20240721"
   name         = "flask-vm"
   machine_type = "f1-micro"
   zone         = "us-west1-a"
