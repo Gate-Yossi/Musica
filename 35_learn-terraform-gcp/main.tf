@@ -1,3 +1,13 @@
+terraform {
+  cloud {
+    organization = "yossi"
+
+    workspaces {
+      name = "poc-gcp-20240721"
+    }
+  }
+}
+
 resource "google_compute_network" "my" {
   project                 = "terraform-20240721"
   name                    = "my-custom-mode-network"
@@ -21,7 +31,7 @@ resource "google_compute_firewall" "ssh" {
 
 resource "google_compute_firewall" "flask" {
   project = "terraform-20240721"
-  name    = "flask-app-firewall"
+  name    = "flask-app-firewall-with-terraform-cloud"
   network = google_compute_network.my.id
 
   allow {
