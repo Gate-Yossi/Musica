@@ -24,10 +24,10 @@ asdf local terraform 1.8.5
 gcloud config get-value account
 
 # プロジェクト新規作成
-gcloud projects create terraform-20240707
+gcloud projects create terraform-20240721
 
 # プロジェクトの情報確認
-gcloud projects describe terraform-20240707
+gcloud projects describe terraform-20240721
 ```
 
 ```bash
